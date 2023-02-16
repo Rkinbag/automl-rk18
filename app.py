@@ -36,6 +36,7 @@ if choice == "Modelling":
         st.dataframe(setup_df)
         best_model = compare_models()
         compare_df = pull()
+        st.info("This is ML model")
         st.dataframe(compare_df)
         save_model(best_model, 'best_model')
 
